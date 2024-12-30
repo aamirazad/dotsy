@@ -1,5 +1,5 @@
-from PyQt6.QtCore import QSize
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtCore import QSize
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 # For command line arguments
 import sys
