@@ -1,8 +1,19 @@
-from PySide6.QtCore import QSize
-from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
-
 # For command line arguments
 import sys
+from random import choice
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
+
+window_titles = [
+    "My App",
+    "My App",
+    "Still My App",
+    "Still My App",
+    "What on earth",
+    "What on earth",
+    "This is surprising",
+    "This is surprising",
+    "Something went wrong",
+]
 
 # Create a qt widget (window)
 class MainWindow(QMainWindow):
@@ -14,13 +25,22 @@ class MainWindow(QMainWindow):
         self.button = QPushButton("Press me!")
         self.button.clicked.connect(self.the_button_was_clicked)
 
+        self.windowTitleChanged.connect(self.the_window_title_changed)
+
         self.setCentralWidget(self.button)
 
     def the_button_was_clicked(self):
-        self.button.setText("You already clicked me.")
-        self.button.setEnabled(False)
+        print("Clicked")
+        new_window_title = choice(window_titles)
+        print("Setting title: %s" % new_window_title)
+        self.setWindowTitle(new_window_title)
 
-        self.setWindowTitle("My Oneshot App")
+
+    def the_window_title_changed(self, window_title):
+        print("Window title changed: %s" % window_title)
+
+        if (window_title == "Something went wrong"):
+            self.button.setDisabled(True)
 
 app = QApplication(sys.argv)
 
