@@ -9,13 +9,20 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        self.button_is_checked = True
+
         self.setWindowTitle("Dotsy")
 
-        button = QPushButton("Press me!")
+        self.button = QPushButton("Press me!")
+        self.button.setCheckable(True)
+        self.button.released.connect(self.the_button_was_released)
+        self.button.setChecked(self.button_is_checked)
 
-        self.setFixedSize(QSize(400,300))
+        self.setCentralWidget(self.button)
 
-        self.setCentralWidget(button)
+    def the_button_was_released(self):
+        self.button_is_checked = self.button.isChecked()
+        print(self.button_is_checked)
 
 app = QApplication(sys.argv)
 
