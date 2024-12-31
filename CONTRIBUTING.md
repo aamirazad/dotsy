@@ -31,7 +31,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Dotsy Code of Conduct](https://github.com/aamirazad/dotsy/blob//CODE_OF_CONDUCT.md).
+[Dotsy Code of Conduct](https://github.com/aamirazad/dotsy/blob/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <82281117+aamirazad@users.noreply.github.com>.
 
