@@ -1,6 +1,7 @@
 # For command line arguments
 import sys
-from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
+from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -20,11 +21,13 @@ class MainWindow(QMainWindow):
     def mouseDoubleClickEvent(self, e):
         self.label.setText("mouseDoubleClickEvent")
 
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
-window.show() # Windows are hidden by default
+window.show()  # Windows are hidden by default
 
 # Start the exec loop
 app.exec()
 # Code after this will only run after exit
+print("Exiting")
