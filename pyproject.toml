@@ -1,23 +1,10 @@
-[tool.poetry]
+[project]
 name = "dotsy"
 version = "0.1.0"
-description = "A GUI tool for managing Linux config files"
-authors = ["Aamir Azad <82281117+aamirazad@users.noreply.github.com>"]
-license = "MIT"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["pyqt6>=6.8.0", "gitpython>=3.1.40"]
 
-[tool.poetry.dependencies]
-python = ">=3.9,<3.14"
-GitPython = "^3.1.40"
-PyYAML = "^6.0.1"
-pyqt6 = "^6.8.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.3"
-black = "^23.11.0"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
+[project.scripts]
 dotsy = "dotsy.main:main"

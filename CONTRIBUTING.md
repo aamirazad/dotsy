@@ -126,10 +126,10 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/aamira
 
 #### AI Use
 
-- I created this project without the use of any AI/LLM. The project was mean to help me learn how to make software to add to my abilities. I ask you do the same and refrain from using AI.
+- I created this project without the use of any AI/LLM. The project was meant to help me learn how to make software to add to my abilities. I ask you do the same and refrain from using AI.
 - Using AI to solve small issues you are stuck on or write repetitive code you would have written yourself is fine.
 - Using AI to write entire files and/or not understanding the decisions the AI made when writing the code is unacceptable.
-- To verify you understand your code and have put thought into the decisions made, I might ask you why you chose to implement a feature the way you did.
+- To verify you understand your code and have put thought into the decisions made, I might ask you why you choose to implement a feature the way you did.
 - To save time, I ask you to briefly describe decisions you made and why you did them
 
 ### Improving The Documentation
@@ -141,9 +141,23 @@ Updating, improving and correcting the documentation
 
 ## Styleguides
 
-### Commit Messages
+### Pull Request Naming Guidelines
 
-- This projects follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages
+We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for our pull request titles (and commit messages on the master branch). Please follow the guidelines below when naming pull requests.
+
+For types, we use the following:
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation only changes
+- `style`: Changes that do not affect the meaning of the code (white space, formatting, missing semi-colons, etc)
+- `refactor`: A code change that neither fixes a bug nor adds a feature, but makes the code easier to read, understand, or improve
+- `perf`: A code change that improves performance
+- `test`: Adding missing tests or correcting existing tests
+- `build`: Changes that affect the build system or external dependencies
+- `ci`: Changes to our CI configuration files and scripts
+- `revert`: Reverts a previous commit
+- `chore`: Other changes that don't apply to any of the above
 
 ## Join The Project Team
 
@@ -151,4 +165,4 @@ Updating, improving and correcting the documentation
 
 ## Attribution
 
-This guide is adapted from the [contributing.md](https://contributing.md/example/)!
+This guide is adapted from the [contributing.md](https://contributing.md/example/) and the [monkeytype](https://github.com/monkeytypegame/monkeytype/blob/master/docs/CONTRIBUTING.md) guide!
