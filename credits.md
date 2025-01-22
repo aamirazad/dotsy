@@ -1,0 +1,1 @@
+- Pyside tutorial: https://www.pythonguis.com/pyside6-tutorial/
