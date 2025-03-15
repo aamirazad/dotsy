@@ -1,28 +1,24 @@
 /*
 Copyright © 2025 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
 // initCmd represents the init command
 var initCmd = &cobra.Command{
 	Use:   "init",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Short: "Create a new configuration store",
+	Long: `Init (dotsy init) sets up a git repo and initializes cobra there:
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("init called")
-	},
+The default path is ~/.dotfiles but this can be changed with the --path flag.
+Dotsy will also create a config.yaml file which is where dotsy will remember
+what applications are installed and their their configuration files are found.`,
+	// Run: func(cmd *cobra.Command, args []string) {
+	// 	fmt.Println("init called")
+	// },
 }
 
 func init() {
