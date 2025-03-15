@@ -8,23 +8,5 @@
 
 ## Quickstart
 
-- This project uses briefcase to packege
-
-## Build from scratch
-
-- This project uses [uv](https://docs.astral.sh/uv/), make sure it is installed
-
-```
-# Clone repository
-git clone https://github.com/aamirazad/dotsy.git
-
-# Change into project directory
-cd dotsy
-
-# Create virtual env and install dependencies
-uv venv
-uv sync
-
-# Run Dotsy in virtual env
-uv run python -m dotsy
-```
+- This project is written in go and uses [cobra](https://cobra.dev/)
+- Download the latest release from [GitHub](https://github.com/aamirazad/dotsy/releases)
