@@ -1,6 +1,3 @@
-/*
-Copyright © 2025 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -17,7 +14,7 @@ The default path is ~/.dotfiles but this can be changed with the --path flag.
 Dotsy will also create a config.yaml file which is where dotsy will remember
 what applications are installed and their their configuration files are found.`,
 	// Run: func(cmd *cobra.Command, args []string) {
-	// 	fmt.Println("init called")
+	// 	fmt.Println(cfgFile)
 	// },
 }
 
